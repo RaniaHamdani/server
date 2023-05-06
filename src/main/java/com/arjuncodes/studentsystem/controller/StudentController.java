@@ -22,6 +22,7 @@ public class StudentController {
 
     @GetMapping("/getAll")
     public List<Student> list(){
+        System.out.println("im in get all");
         return studentService.getAllStudents();
     }
 }
